@@ -2,21 +2,50 @@
 layout: default
 ---
 
+<head>
+<style>
+.image-txt-container {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+}
+.item-image {
+  margin: 0px 20px 0px 0px;
+  width: 200px;
+}
+.profile-image {
+  margin: 0px 0px 0px 20px;
+  width: 300px;
+}
+</style>
+</head>
+
 <body>
 
 <h2>Contributors</h2>
 
 <a href="https://martin-danelljan.github.io">Martin Danelljan</a> <br>
 
-Goutam Bhat
+<a href="https://www.vision.ee.ethz.ch/en/members/detail/407/">Goutam Bhat</a> <br>
 	
 <h2>Projects</h2>
 
-	<a href="atom/">ATOM: Accurate Tracking by Overlap Maximization</a>, <b>CVPR 2019</b>
-	<p>In this work we primarily address the problem of performing accurate bounding box estimation for generic visual tracking. We train a target estimation module offline, conditioned on the target appearance, to predict the overlap between the object and a bounding box estimate. Furthermore, we propose a target classification component that is learned online using dedicated optimization techniques.</p>
-	
-	<a href="eco/">ECO: Efficient Convolution Operators for Tracking</a>, <b>CVPR 2017</b>
-	<p>In this work we tackle the key causes behind the problems of computational complexity <i>and</i> over-fitting in advanced DCF trackers.</p>
+
+<h3><b>CVPR 2019:</b> <a href="https://visionml.github.io/atom/">ATOM: Accurate Tracking by Overlap Maximization</a></h3>
+<div class="image-txt-container">
+<img src="atom_overview.png" class="item-image">
+	<div>
+In this work we primarily address the problem of performing accurate bounding box estimation for generic visual tracking. We train a target estimation module offline, conditioned on the target appearance, to predict the overlap between the object and a bounding box estimate. Furthermore, we propose a target classification component that is learned online using dedicated optimization techniques.
+		<br> <b>[<a href="https://visionml.github.io/atom/">Project</a>] [<a href="https://arxiv.org/abs/1811.07628">Paper</a>] [<a href="https://github.com/visionml/pytracking">Code</a>] </b>
+</div></div>
+
+<h3><b>CVPR 2017:</b> <a href="https://visionml.github.io/eco/">ECO: Efficient Convolution Operators for Tracking</a></h3>
+<div class="image-txt-container">
+<img src="ECOfig.png" class="item-image">
+<div>In this work we tackle the key causes behind the problems of computational complexity <i>and</i> over-fitting in advanced DCF trackers. We revisit the core DCF formulation and introduce: (i) a factorized convolution operator, which drastically reduces the number of parameters in the model; (ii) a compact generative model of the training sample distribution, that significantly reduces memory and time complexity, while providing better diversity of samples; (iii) a conservative model update strategy with improved robustness and reduced complexity.
+	<br><b>[<a href="https://visionml.github.io/eco/">Project</a>] [<a href="https://arxiv.org/abs/1611.09224">Paper</a>] [<a href="https://github.com/martin-danelljan/ECO">Code</a>]</b>
+</div>
+</div>
 
 </body>
 
